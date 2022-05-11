@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.4.24;
 
 import "../app/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol";
@@ -11,9 +12,7 @@ contract StarNotary is ERC721 {
     mapping(uint256 => Star) public tokenIdToStarInfo;
     mapping(uint256 => uint256) public starsForSale;
 
-    constructor(string memory name_, string memory symbol_) ERC721(name_, symbol_) {
-
-    }
+    constructor(string memory name_, string memory symbol_) ERC721(name_, symbol_) { }
 
     // Create Star using the Struct
     function createStar(string memory _name, uint256 _tokenId) public { // Passing the name and tokenId as a parameters
