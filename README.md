@@ -16,3 +16,16 @@ Steps to create this project
 
 7 - Update files inside migration directory (remove old code and update it with new contracts)
 
+8 - Add tests to Test folder
+
+9 - On terminal run truffle test and check that all the tests pass
+
+10 - Add index.html and index.js for the DApp
+
+11 - For running the DApp - 
+	- truffle develop
+	- compile
+	- migrate --reset
+	- in a different terminal run - npm run dev
+	- on a browser, open the address given by the previous command (normally http://localhost:8080) and connect metamask
+	- create a star and click button, then accept transaction on metaslack
